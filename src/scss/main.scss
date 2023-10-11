@@ -1,0 +1,25 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+@import "mixins";
+
+
+//Большие компоненты страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/catalog";
+@import "./components/populat-flow";
+@import "./components/order";
+@import "./components/reason";
+@import "./components/contact";
+@import "./components/instagram";
+@import "./components/footer";
+
+
+//Маленькие компоненты
+@import "./components/social";
+@import "./components/product";
+
+@import "media";

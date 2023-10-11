@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Document</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    @include('parts/header.html')
+    <main class="main">
+    @include('parts/hero.html')
+    @include('parts/catalog.html')
+    @include('parts/popular-flow.html')
+    @include('parts/order.html')
+    @include('parts/reason.html')
+    @include('parts/contact.html')
+    @include('parts/instagram.html')
+    </main>
+    @include('parts/footer.html')
+  </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+.contact {
+  position: relative;
+  padding: 20px 0 50px;
+  background-color: #0F2222;
+  z-index: 3;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -10%;
+    left: 0;
+    width: 691.88px;
+    height: 1037.83px;
+    background-image: url('../../img/contact-img-back.png');
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    span {
+      padding-left: 95px;
+    }
+  }
+  &__descr {
+    max-width: 255px;
+    display: block;
+    padding-top: 53px;
+    @extend %oswald-400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    border-top: 1px solid var(--turquoise);
+    text-transform: uppercase;
+  }
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+    }
+    &::before {
+      left: -20%;
+      top: -10%;
+      width: 404px;
+      height: 284px;
+      transform: rotate(-95deg);
+      background: var(--purple);
+      filter: blur(70px);
+      z-index: -1;
+    }
+    &::after {
+      left: 10%;
+      top: 0%;
+      width: 214px;
+      height: 284px;
+      transform: rotate(32.828deg);
+      background: var(--turquoise);
+      filter: blur(120px);
+      z-index: -1;
+    }
+  }
+  &__text {
+    position: relative;
+    // margin-right: auto;
+    margin-right: 50px;
+  }
+  &__form {
+
+  }
+}
+
+.form {
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    margin-bottom: 10px;
+  }
+  &__el {
+    background-color: transparent;
+    border: 1px solid var(--turquoise);
+    padding: 20px;
+    color: var(--turquoise);
+    &::placeholder {
+      @extend %oswald-400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.04em;
+      color :#395959;
+      text-transform: uppercase;
+    }
+  }
+  &__textarea {
+    height: 120px;
+    resize: none;
+    margin-bottom: 20px;
+  }
+  &__btn {
+    margin-bottom: 10px;
+  }
+  &__info {
+    @extend %corm-300 ;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+  }
+  &__info-link {
+    color: var(--wild);
+    text-decoration: underline;
+  }
+}
+

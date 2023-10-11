@@ -1,0 +1,114 @@
+.insta {
+  position: relative;
+  padding: 260px 0 200px;
+  background-color: var(--dark);
+  z-index: 2;
+
+  // overflow: hidden;
+
+  &::before,
+  &::after  {
+    position: absolute;
+    content:'';
+
+  }
+  &::before {
+    width: 879.44px;
+    height: 211.054px;
+    transform: rotate(21.097deg);
+    bottom: -45%;
+    left: 40%;
+    border-radius: 879.44px;
+    background: var(--turquoise);
+    filter: blur(125px);
+    z-index: -1;
+  }
+  &::after {
+    right: -6%;
+    bottom: -16%;
+    width: 354.93px;
+    height: 364.216px;
+    transform: rotate(32.828deg);
+    background: var(--purple);
+    filter: blur(125px);
+  }
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #707070;
+    opacity: 0.1;
+    @extend %oswald-700;
+    font-size: 200px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    z-index: -1;
+  }
+  &__inner {
+    position: relative;
+    display: flex;
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: -150%;
+      left: -36%;
+      width: 99.587px;
+      height: 211.054px;
+      transform: rotate(21.097deg);
+      background: var(--turquoise);
+      filter: blur(125px);
+    }
+  }
+  &__images {
+    display: flex;
+    margin-right: 30px;
+  }
+  &__img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: flex-end;
+  }
+  &__text {
+    position: relative;
+    display: block;
+    color: var(--white);
+    margin-top: -40px;
+    @extend %real-400;
+    font-size: 80px;
+    line-height: 40px;
+    text-transform: lowercase;
+    margin-bottom: 100px;
+    align-self: self-start;
+
+    &::before{
+      position: absolute;
+      content:'';
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 350px;
+      height: 1px;
+      background-color: var(--turquoise);
+    }
+  }
+  &__social {
+    .social__item:not(:last-child) {
+      margin-right: 30px;
+    }
+    .social__link {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+

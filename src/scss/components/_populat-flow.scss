@@ -1,0 +1,76 @@
+.popular {
+  position: relative;
+  padding-bottom: 160px;
+  background-image: url('../../img/popular-img.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content:"";
+    bottom: 0;
+    left: 0;
+  }
+  &::before {
+    bottom: -10%;
+    left: 10%;
+    border-radius: 25% 75% 14% 86% / 29% 76% 24% 71% ;
+    width: 415px;
+    height: 760px;
+    transform: rotate(-30deg);
+    background: var(--turquoise);
+    filter: blur(200px);
+    opacity: .7;
+    z-index: -1;
+  }
+  &::after {
+    left: 35%;
+    bottom: 10%;
+    border-radius: 18% 82% 68% 32% / 19% 52% 48% 81% ;
+    width: 570px;
+    height: 400px;
+    transform: rotate(50deg);
+    background: var(--purple);
+    filter: blur(120px);
+    z-index: -1;
+  }
+  &__top {
+    margin-bottom: 86px;
+  }
+  &__title {
+    max-width: 775px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    span {
+      margin-left: auto;
+    }
+  }
+  &__subtitle {
+    display: block;
+    text-align: center;
+  }
+  &__inner {
+
+  }
+  &__flows {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  &__link-watch {
+    align-items: center;
+    svg {
+      fill: currentColor;
+      width: 40px;
+      height: 6px;
+      padding-left: 10px;
+    }
+  }
+}
+.popular-flows {
+}
+
+

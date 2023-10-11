@@ -1,0 +1,112 @@
+
+.hero {
+  position: relative;
+  // height: 1245px;
+  padding-top: 170px;
+  padding-bottom: 607px;
+  background-image: url('../../img/hero-img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+
+  &::before {
+    position: absolute;
+    content:'';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(180deg, rgba(4, 10, 10, 0.00) 0%, #040A0A 100%);
+  }
+  &__inner {
+    position: relative;
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__content-text {
+    display: block;
+    color: var(--white);
+    @extend %oswald-400;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    margin-bottom: 45px;
+  }
+ 
+}
+
+.title {
+  color: var(--white);
+  @extend %corm-300;
+  font-size: 200px;
+  letter-spacing: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  line-height: 75%;
+  margin-bottom: 50px;
+}
+
+.hero-aside {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  &__social {
+    padding: 17px;
+    border-radius: 10px;
+    margin-bottom: 180px;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(10px);
+    .social {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .social__item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+  }
+}
+
+.social {
+  &__item {}
+  &__link {}
+}
+.better-call {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 30px;
+  * {
+    color: var(--turquoise);
+    @extend %oswald-400;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+  &__tel {
+    margin-bottom: 7px;
+  }
+  &__btn {
+    display: block;
+    padding: 10px 20px 10px 40px;
+    border-radius: 10%;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(10px);
+    background-image: url('../../img/mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 8%;
+    background-size: 16px;
+  }
+}
+

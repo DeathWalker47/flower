@@ -1,0 +1,134 @@
+.catalog {
+  position: relative;
+  padding: 100px 0 140px;
+  overflow: hidden;
+  &::before ,
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+  }
+  &::before {
+    width: 700px;
+    height: 200px;
+    bottom: 100px;
+    transform: rotate(32deg);
+    background: var(--purple);
+    filter: blur(200px);
+  }
+  &::after {
+    right: 0;
+    top: 50%;
+    width: 800px;
+    height: 200px;
+    transform: rotate(32deg);
+    background: var(--turquoise);
+    filter: blur(200px);
+
+  }
+  &__inner {
+    position: relative;
+  }
+  &__items {
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    // grid-template-columns: repeat(12, 1fr);
+  }
+  &__descr {
+    padding-left: 95px;
+  }
+  &__text {
+    max-width: 540px;
+    width: 100%;
+    @extend %oswald-300;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 30px 50px;
+    border-radius: 20px;
+    background: rgba(0,0,0,.3);
+    backdrop-filter: blur(60px);
+    &--one {
+      width: 445px;
+      height: 280px;
+      .catalog__item-subtitle {
+        top: -40%;
+        left: -10%;
+      }
+    }
+    &--two{
+      height: 310px;
+      margin-top: -100px;
+      .catalog__item-subtitle {
+        top: -31%;
+        left: -36%;
+      }
+    }
+    &--three {
+      height: 260px;
+      .catalog__item-subtitle {
+        top: 26%;
+        left: -15%;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__item-subtitle {
+    position: absolute;
+    @extend %oswald-700;
+    font-size: 200px;
+    line-height: 296px;
+    letter-spacing: 0.04em;
+    color: #707070;
+    opacity: .1;
+    text-transform: uppercase;
+    z-index: -1;
+    pointer-events: none;
+  }
+  &__item-title {
+    max-width: 270px;
+    @extend %oswald-700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    color: var(--turquoise);
+    margin-bottom: 10px;
+  }
+  &__item-list {
+    margin-bottom: auto;
+  }
+  &__item-link {
+    position: relative;
+    padding-left: 10px;
+    @extend %oswald-400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -10px;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      background-color:var(--white);
+      border-radius: 100%;
+    }
+  }
+}
+
