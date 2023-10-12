@@ -142,14 +142,14 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 16px;
-    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
     border-radius:100%;
     background-color: var(--turquoise);
     color: #142B2B;
     @extend %oswald-400;
     font-size: 12px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.48px; 
   }
   &__btn {
     width: 30px;

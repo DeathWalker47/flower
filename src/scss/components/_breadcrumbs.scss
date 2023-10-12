@@ -1,0 +1,31 @@
+.breadcrumbs {
+  padding-top: 35px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  &__item {
+    position: relative;
+    @extend %oswald-400;
+    text-transform: uppercase;
+    color:var(--white);
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    &:not(:last-child) {
+      // margin-right: 20px;
+      padding-right: 20px;
+      &::before {
+        position: absolute;
+        content: '/';
+        top: 50%;
+        left: 80%;
+        transform: translateY(-50%);
+      }
+    }
+
+  }
+  &__link {
+
+  }
+}

@@ -3,7 +3,8 @@
   width: 100%;
   left: 0;
   right: 0;
-  top: 20px;
+  top: 0px;
+  padding-top: 20px;
   z-index: 3;
   &__inner {
     position: relative;
@@ -102,5 +103,27 @@
     font-size: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
+  }
+}
+.header.header-page  {
+
+  position: relative;
+}
+.header-page {
+  background-color:#000000;
+  &__info-box {
+    top:0;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+  }
+  .better-call {
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+  .bag {
+    span{
+      color: var(--dark);
+    }
   }
 }
