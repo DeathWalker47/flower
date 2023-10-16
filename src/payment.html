@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>О нас</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    @include('parts/header-page.html')
+    @include('parts/breadcrumbs.html')
+    <main class="main ">
+      <section class="payment">
+        <div class="container">
+          <div class="payment__top">
+            <h1 class="payment__title section-title">
+              Доставка
+              <span>и оплата</span>
+            </h1>
+            <div class="payment__discl">
+              <span class="payment__discl-title">
+                Дорогие клиенты!
+              </span>
+              <p class="payment__discl-text">
+                Во время пандемии (COVID-19) компания Lover Flower призывает всех меньше контактировать с другими людьми для защиты себя и своих близких. Именно поэтому мы организовали
+                <span class="payment__discl-text-accent">БЕСКОНТАКТНУЮ ДОСТАВКУ</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="payment__content payment-content">
+            <div class="payment__payinfo">
+              <div class="payment__payinfo-title payment-content__subtitle">
+                Способы оплаты:
+              </div>
+              <ul class="payment-list list-reset">
+                <li class="payment-list__item">
+                  БАНКОВСКОЙ КАРТОЙ ПРИ ОФОРМЛЕНИИ ЗАКАЗА ЧЕРЕЗ САЙТ или по ссылке
+                </li>
+                <li class="payment-list__item">
+                  НАЛИЧНЫМИ,  БАНКОВСКОЙ КАРТОЙ ПРИ САМОВЫВОЗЕ или с расчетного счета орагнизации
+                </li>
+                <li class="payment-list__item">
+                  НАЛИЧНЫМИ <br> ПРИ ДОСТАВКЕ <br> КУРЬЕРОМ
+                </li>
+                <li class="payment-list__item">
+                  КРИПТОВАЛЮТОЙ
+                </li>
+              </ul>
+            </div>
+            <div class="payment-price">
+              <span class="payment-price__title payment-content__subtitle">
+                стоимость доставки:
+              </span>
+              <ul class="payment-price__list list-reset">
+                <li class="payment-price__list-item">
+                  <b>Бесплатно</b> – при заказе на сумму
+                  <span class="text-accent">от 90 рублей</span>
+                </li>
+                <li class="payment-price__list-item">
+                  <b>10 рублей</b> – при заказе на сумму
+                  <span class="text-accent">менее 90 рублей</span>
+                </li>
+                <li class="payment-price__list-item">
+                  Так же вы можете забрать ваш заказ самостоятельно по адресу:
+                  <span class="text-accent"> г. Минск, ул. Тимирязева д. 67, комн. 112 ежедневно с 10.00 до 21.00</span>
+                </li>
+              </ul>
+            </div>
+            <div class="payment-delivery payment__delivery">
+              <span class="payment-delivery__title payment-content__subtitle">
+                Условия доставки:
+              </span>
+              <ul class="payment-delivery__list list-reset">
+                <li class="payment-delivery__list-item">
+                  Доставка осуществляется по городу Минску в пределах МКАД  день
+                  <span class="text-accent">в любой</span>
+                </li>
+                <li class="payment-delivery__list-item">
+                  Возможность, сроки и стоимость доставки за пределы МКАД, доставки в ночное время, праздники
+                  <span class="text-accent">оговариваются с менеджером</span>
+                </li>
+              </ul>
+            </div>
+            <div class="payment-info">
+              <div class="payment-additionally">
+                <span class="payment-additionally__title payment-content__subtitle">
+                  Дополнительно:
+                </span>
+                <p class="payment-additionally__text">
+                  Доставка иному лицу возможна только в случае оплаты заказа заказчиком. Доставка осуществляется не ранее чем через 2 часа после оплаты заказа, но может быть ранее, если букет есть в наличии либо по договорённости с менеджером.
+                  Время ожидания курьера составляет 15 минут.
+                  В случае если на момент доставки цветов получателя нет либо нет возможности по иным причинам произвести доставку (указан неточный адрес, закрытая входная дверь, контрольно-пропускная система и др.), мы оставляем за собой право по собственному выбору:
+
+                  <ul class="payment-additionally__list list-reset">
+                    <li>
+                      оставить цветы тому, кто открыл дверь;
+                    </li>
+                    <li>
+                      с заказчиком согласовать повторную доставку, которая дополнительно оплачивается;
+                    </li>
+                    <li>
+                      отказаться от передачи цветов без возврата денежных средств.
+                    </li>
+                  </ul>
+                </p>
+                <p class="payment-additionally__text">Если вы либо иной получатель не получили заказ, вам необходимо сообщить об этом менеджеру по телефону <a href="tel:375291136969" class="text-accent">+375 29 113 69 69.</a>
+                </p>
+              </div>
+              <div class="refund">
+                <span class="refund__title payment-content__subtitle">
+                  Возврат денег:
+                </span>
+                <p class="refund__text">
+                  При отказе заказчика от заказа в течение двух часов, если заказ ещё не начал готовиться, средства возвращаются в полном объёме. Если же флорист начал подготовку, то заказчик имеет право на возврат 50% стоимости, либо, если ещё не был оплачен, то обязан оплатить 50%.
+                </p>
+                <p class="refund__text">
+                  Цветы надлежащего качества возврату и обмену не подлежат, а если имеются какие-либо недостатки в цветах – возврат производится лишь если эти недостатки не являются природными и естественными изъянами растения.
+                  Возврат денежных средств производится незамедлительно на тот счёт, с которого произошла оплата, их же поступление на счёт зависит от платёжной системы.
+                </p>
+              </div>
+              </div>
+              <span class="bottom-text"><span>lover</span><span>flower</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('parts/footer.html')
+  </div>
+</body>
+</html>
