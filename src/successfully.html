@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Оплата прошла успешно</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    @include('parts/header-page.html')
+    <main class="main ">
+      <section class="successfully">
+        <div class="container">
+          <h1 class="successfully__title section-title">
+            Оплата прошла
+            <span>успешно!</span>
+          </h1>
+          <div class="successfully__info">
+            <span class="successfully__number">
+              Ваш номер заказа – 395808599
+            </span>
+            <p class="successfully__text">
+              <span>
+                Спасибо за заказ!
+              </span>
+              <span>
+                Вы получите уведомление о статусе вашего заказа
+              </span>
+            </p>
+            <a href="./index.html" class="successfully__link">На главную</a>
+            <span class="bottom-text successfully__bottom-text"><span>lover</span><span>flower</span></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('parts/footer.html')
+  </div>
+</body>
+</html>

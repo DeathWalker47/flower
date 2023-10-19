@@ -18,10 +18,7 @@
 @import "./components/footer";
 
 
-@import "./components/about-us";
-@import "./components/payment";
-@import "./components/faq";
-@import "./components/contact-page";
+
 
 
 //Маленькие компоненты
@@ -29,4 +26,12 @@
 @import "./components/product";
 @import "./components/breadcrumbs";
 
+@import "./components/about-us";
+@import "./components/payment";
+@import "./components/successfully";
+@import "./components/payment-error";
+@import "./components/error-404";
+@import "./components/faq";
+@import "./components/contact-page";
+@import "./components/corporate";
 @import "media";

@@ -1,0 +1,105 @@
+.successfully {
+  position: relative;
+    padding-top: 113px;
+    padding-bottom: 400px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: -35%;
+      bottom: calc(100% - 135%);
+      right: 0;
+      width: 1060px;
+      height: 1000px;
+      background-image: url('../../img/success-img.png');
+      background-repeat: no-repeat;
+      background-position: 100% bottom;
+      background-size: auto;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -200px;
+      right: 60px;
+      width: 400px;
+      height: 520px;
+      background-color: var(--wild);
+      background: var(--purple);
+      filter: blur(120px);
+      z-index: -1;
+    }
+
+    &__title {
+      position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -60%;
+      left: -41%;
+      width: 120px;
+      height: 230px;
+      background: var(--turquoise);
+      filter: blur(125px);
+    }
+    span{
+      position: relative;
+      display: block;
+      margin-left: auto;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: -50%;
+        transform: translate(-50%,-50%);
+        width: 350px;
+        height: 1px;
+        background-color: var(--wild);
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+
+  }
+  &__number {
+     @extend %oswald-400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.04em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__text {
+     @extend %oswald-400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.04em;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+  &__link {
+    @extend %oswald-700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: var(--turquoise);
+    text-decoration: underline;
+    transition: color .3s ease-in-out;
+    text-transform: uppercase;
+
+    &:hover {
+      color: var(--wild);
+    }
+  }
+  &__bottom-text {
+    bottom: 18px;
+    left: 260px;
+  }
+}

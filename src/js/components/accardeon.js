@@ -1,6 +1,7 @@
 let accardeon = document.querySelectorAll('.accardeon__item');
 
-accardeon.forEach(el => {
+if(accardeon) {
+  accardeon.forEach(el => {
   el.addEventListener('click', (e) => {
     const self = e.currentTarget;
     const content = self.querySelector('.accardeon__content');
@@ -21,3 +22,5 @@ accardeon.forEach(el => {
 
   })
 })
+
+}

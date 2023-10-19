@@ -26,6 +26,10 @@
 
   }
   &__link {
-
+    &--current {
+      pointer-events: none;
+      cursor: default;
+      user-select: none;
+    }
   }
 }
