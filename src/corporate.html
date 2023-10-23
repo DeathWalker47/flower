@@ -15,7 +15,7 @@
     @include('parts/breadcrumbs.html')
     <main class="main ">
       <section class="corporate">
-        <div class="container">
+        <div class="container corporate__container">
           <div class="corporate__top">
             <h1 class="corporate__title section-title">
               Букеты
@@ -104,12 +104,62 @@
           </div>
 
           <div class="corporate__form">
-            <span class="corporate__info-text">
-              заполните заявку:
-            </span>
-            <form action="#" class="corporate-form">
-
+            <form action="#" class="form-corp ">
+              <fieldset>
+                <legend class="form-corp__info-text">заполните заявку:</legend>
+                <div class="form-corp__inputs">
+                  <div class="form-corp__inputs-left">
+                    <label class="form-corp__label">
+                      Наименование организации
+                      <input type="text" name="Имя" class="input-reset form-corp__input" placeholder="Введите наименование вашей организации">
+                    </label>
+                    <label class="form-corp__label">
+                      Почтовый адрес
+                      <input type="text" name="Имя" class="input-reset form-corp__input" placeholder="Введите почтовый адрес">
+                    </label>
+                    <label class="form-corp__label">
+                      Контактное лицо
+                      <input type="text" name="Имя" class="input-reset form-corp__input" placeholder="Введите имя контактного лица">
+                    </label>
+                    <label class="form-corp__label">
+                      Контактный номер телефона
+                      <input type="tel" name="Имя" class="input-reset form-corp__input" placeholder="+7 (977) 777-77-77">
+                    </label>
+                    <label class="form-corp__label">
+                      Стоимость букета сотруднику (если разная – указать)
+                      <input type="number" name="Имя" class="input-reset form-corp__input" placeholder="Укажите стоимость букета сотруднику">
+                    </label>
+                    <label class="form-corp__label">
+                      Адрес электронной почты
+                      <input type="email" name="Имя" class="input-reset form-corp__input" placeholder="Укажите ваш адрес электронной почты">
+                    </label>
+                  </div>
+                  <div class="form-corp__inputs-right">
+                    <label class="form-corp__label">
+                      УНП
+                      <input type="text" name="Имя" class="input-reset form-corp__input" placeholder="УНП">
+                    </label>
+                    <label class="form-corp__label">
+                      Расчетный счет
+                      <input type="number" name="Имя" class="input-reset form-corp__input" placeholder="Введите номер расчетного счета">
+                    </label>
+                    <label class="form-corp__label">
+                      Код банка
+                      <input type="number" name="Имя" class="input-reset form-corp__input" placeholder="Код банка">
+                    </label>
+                    <label class="form-corp__label">
+                      Предполагаемое количество заявок в месяц
+                      <input type="number" name="Имя" class="input-reset form-corp__input" placeholder="Введите предполагаемое количество заявок в месяц">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <button class="form-corp__btn btn-reset btn-link">Отправить</button>
+              <span class="form-corp__info ">
+                Нажимая на&nbsp;кнопку «Отправить», я&nbsp;даю свое согласие на&nbsp;обработку персональных данных, в&nbsp;соответствии с&nbsp;<a href="#" class="form-corp__info-link">Политикой конфиденциальности</a>
+              </span>
             </form>
+            <span class="corporate__bottom-text bottom-text"><span>lover</span><span>flower</span></span>
           </div>
 
         </div>
