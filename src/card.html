@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Рубиновые искры</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    @include('parts/header-page.html')
+    @include('parts/breadcrumbs.html')
+    <main class="main ">
+      <section class="card-page">
+        <h2 class="visually-hidden">Рубиновые Искры</h2>
+        <div class="container">
+          <div class="card-page__top">
+            <div class="card-page__images card-images">
+
+            </div>
+            <div class="card-page__content card-content">
+              <a href="./index.html" class="link-back card-page__link-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2713 12.1045L6.5 8.33316L10.2713 4.56183L10.7427 5.03316L7.44267 8.33316L10.7427 11.6332L10.2713 12.1045Z" />
+                  </svg>
+                Назад
+              </a>
+              <h3 class="card-content__title">
+                рубиновые искры
+              </h3>
+              <div class="card-content__price">
+                <span class="card-content__price-current">167.00 ₽</span>
+                <span class="card-content__price-old">187.00 ₽</span>
+              </div>
+              <div class="card-content__info">
+                <span>Состав:</span> Гвоздика (Диантус), Леукодендрон, Леукоспермум (Нутан), Лотос, Роза
+              </div>
+              <div class="card-content__info">
+                Завораживающая глубина ваших чувств передана огненными красками этого букета
+              </div>
+              <div class="card-content__categories">
+                <p>
+                  Категории:
+                  <a href="#">8 марта</a>,
+                  <a href="#">Букет на 14 февраля</a>,
+                  <a href="#">Букет на праздник</a>,
+                  <a href="#">Букеты цветов на День рождения</a>,
+                  <a href="#">Композиции из цветов</a>,
+                  <a href="#">Композиции из цветов в коробке</a>
+                  <a href="#">Мужские букеты</a>
+                </p>
+                <p>
+                  Метки:
+                  <a href="#">Для начальника</a>,
+                  <a href="#">Мужские букеты</a>
+                </p>
+              </div>
+              <div class="card-content__bottom">
+                <button class="btn-reset card-content__btn btn-bag">В корзину</button>
+                <div class="card-content__stepper stepper">
+                  <button class="btn-reset stepper__btn">-</button>
+                  <input type="text" class="stepper__input input-reset" value="1" maxlength="3">
+                  <button class="btn-reset stepper__btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-page__additional additional">
+            <h3 class="additional__title">
+              Дополнительно к заказу:
+            </h3>
+            <div class="additional__items">
+              <div class="additional__item">
+                <span class="additional__item-title">
+                  Удобрения для срезанных цветов
+                </span>
+                <p class="additional__item-text">
+                  При указании об этом в пожеланиях к букету, мы приложим пакетик удобрения для вас
+                </p>
+              </div>
+              <div class="additional__item">
+                <span class="additional__item-title">
+                  подпишем
+                  открытку
+                </span>
+                <p class="additional__item-text">
+                  В пожеланиях к букету укажите текст, какой хотите разместить и выберите на сайте саму открытку
+                </p>
+              </div>
+              <div class="additional__item">
+                <span class="additional__item-title">
+                  Фото букета перед отправкой
+                </span>
+                <p class="additional__item-text">
+                  В примечании к заказу укажите
+                  об этом и мы отправим фото готового букета перед доставкой.
+                  В праздничные дни в связи
+                  с большой загруженностью такой возможности нет
+                </p>
+              </div>
+              <div class="additional__item">
+                <span class="additional__item-title">
+                  Букет-сюрприз
+                </span>
+                <p class="additional__item-text">
+                  Если хотите, чтобы получатель не знал, что ему вручат а также от кого, то укажите об этом
+в примечании к заказу
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs" data-tabs="tab">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">доставка и оплата</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">отзывы</button></li>
+            </ul>
+            <div class="tabs__content">
+              <div class="tabs__panel">
+                <div class="tabs__panel-box">
+                  <h3 class="tabs__panel-title">
+                    Способы оплаты:
+                  </h3>
+                  <ul class="tabs__panel-list">
+                    <li class="tabs__panel-item">
+                      БАНКОВСКОЙ КАРТОЙ ПРИ ОФОРМЛЕНИИ ЗАКАЗА ЧЕРЕЗ САЙТ
+                    </li>
+                    <li class="tabs__panel-item">
+                      НАЛИЧНЫМИ ИЛИ БАНКОВСКОЙ КАРТОЙ ПРИ САМОВЫВОЗЕ
+                    </li>
+                    <li class="tabs__panel-item">
+                      НАЛИЧНЫМИ ПРИ ДОСТАВКЕ КУРЬЕРОМ
+                    </li>
+                    <li class="tabs__panel-item">
+                      КРИПТОВАЛЮТОЙ ОНЛАЙН
+                    </li>
+                  </ul>
+                </div>
+                <div class="tabs__panel-box">
+                  <h3 class="tabs__panel-title">
+                    стоимость доставки:
+                  </h3>
+                  <ul class="tabs__panel-list">
+                    <li class="tabs__panel-item">
+                      <b>Бесплатно</b> – при заказе на сумму <span class="text-accent">от 90 рублей</span>
+                    </li>
+                    <li class="tabs__panel-item">
+                      <b>10 рублей</b> – при заказе на сумму <span class="text-accent">менее 90 рублей</span>
+                    </li>
+                    <li class="tabs__panel-item">
+                      Возможность, сроки и стоимость доставки за пределы МКАД, доставки в ночное время, праздники <span class="text-accent">оговариваются с менеджером</span>
+                    </li>
+                    <li class="tabs__panel-item">
+                      Так же вы можете забрать ваш заказ самостоятельно по адресу:
+                      <span class="text-accent">г. Минск, ул. Тимирязева д. 67, комн. 112 ежедневно с 10.00 до 21.00</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tabs__panel-box">
+                  <h3 class="tabs__panel-title">
+                    Условия доставки:
+                  </h3>
+                  <p class="tabs__panel-text">
+                    Доставка осуществляется по городу Минску в пределах МКАД <span class="text-accent">в любой день с 09.00 до 22.00.</span> Доставка в ночное время осуществляется по договоренности с оператором
+                  </p>
+                </div>
+              </div>
+              <div class="tabs__panel">
+                <div class="reviews">
+                  <span class="reviews__text-info">
+                    Отзывов пока нет
+                  </span>
+                  <p class="reviews__subtitle text-accent">
+                    Будьте первым, кто оставил отзыв на “Рубиновые искры”
+                  </p>
+                  <span class="reviews__text">
+                    Ваш адрес email не будет опубликован. Обязательные поля помечены *
+                  </span>
+                  <p class="reviews__rating">
+                    Ваша оценка:
+                    <div class="reviews__stars">
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                    </div>
+                  </p>
+                  <form action="#" class="reviews__form form">
+                    <label class="reviews__label">
+                      Ваш отзыв*
+                      <textarea name="Комментарий" class="reviews__input reviews__textarea input-reset" placeholder="Введите Комментарий"></textarea>
+                    </label>
+                    <label  class="reviews__label">
+                      Имя*
+                      <input type="text" name="Имя" class="reviews__input input-reset" placeholder="Введите Ваше Имя">
+                    </label>
+                    <label  class="reviews__label">
+                      E-mail*
+                      <input type="email" name="Email" class="reviews__input input-reset" placeholder="Введите Вашу Почту">
+                    </label>
+                    <button class="form__btn reviews__btn btn-reset btn-link">Отправить</button>
+                    <span class="form__info">
+                      Нажимая  на кнопку «Отправить», я даю свое согласие на обработку персональных данных, в соответствии с <a href="#" class="form__info-link">Политикой конфиденциальности</a>
+                    </span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('parts/footer.html')
+  </div>
+</body>
+</html>
