@@ -1,6 +1,6 @@
 .product {
   position: relative;
-  width: 350px;
+  // width: 350px;
   &__position {
     position: absolute;
     top: -10px;
@@ -31,7 +31,7 @@
   &__link-img {
     display: block;
     width: 100%;
-    height: 450px;
+    height: 75%;
     margin-bottom: 10px;
   }
   &__img {

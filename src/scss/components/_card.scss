@@ -73,7 +73,86 @@
 }
 
 .card-images {
+  position: relative;
+  max-width: 540;
+  height: 450px;
+  display: flex;
+  flex-direction: row-reverse;
+  // flex-direction: column;
+  gap: 30px;
+
 }
+
+.slider-small {
+  position: relative;
+  margin: 30px 0 30px;
+  .swiper-slide {
+    filter: grayscale(90%);
+    transition: filter .3s ease-in-out;
+  }
+  .swiper-slide-thumb-active {
+    filter: grayscale(0%);
+  }
+  &__image {
+    width: 160px;
+    height: 185px;
+    cursor: pointer;
+    * {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.slider-big {
+  width: 350px;
+  &__image {
+    width: 350px;
+    height: 450px;
+    * {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.slider-img-left__prev {
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: calc(160px / 2 - 30px /2);
+  transform: rotate(90deg);
+  &::after{
+    display: none;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--white);
+
+  }
+}
+
+.slider-img-left__next{
+  width: 30px;
+  height: 30px;
+  bottom: -10px;
+  top: auto;
+  left: calc(160px / 2 - 30px /2);
+  transform: rotate(-90deg);
+  &::after{
+    display: none;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--white);
+
+  }
+}
+
 .card-content {
   &__title {
     @extend %corm-300;
@@ -149,19 +228,23 @@
   align-items: center;
   width: 160px;
   height: 100%;
-  border: 1px solid #555555;
+  border: 1px solid #afafaf;
   &__btn {
     width: 25%;
     @extend %oswald-400;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.1em;
-  color: #555555;
+    color: #afafaf;
+    &--disable {
+      opacity: .5;
+      pointer-events: none;
+    }
   }
   &__input {
     width: 50%;
     background-color: transparent;
-    color: #555555;
+    color: #afafaf;
     text-align: center;
   }
 }

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Каталог</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    @include('parts/header.html')
+    <main class="main main-catalog" id="catalog">
+      @include('parts/breadcrumbs.html')
+      <section class="catalog-page" >
+        <div class="container">
+          <div class="catalog-page__inner">
+            <div class="catalog-page__top">
+              <div class="catalog-page__descr">
+                <h1 class="catalog-page__title  section-title">
+                  каталог
+                  <span>
+                    букетов
+                    <span class="catalog-page__subtitle">
+                      В нашем магазине самый большой выбор букетов для любых событий:
+                    </span>
+                  </span>
+                </h1>
+              </div>
+              <div class="catalog-page__categories categories">
+                <button class="btn-reset categories__btn">
+                  Букеты из гипсофил
+                </button>
+                <button class="btn-reset categories__btn">
+                  Букеты Из Ромашек
+                </button>
+                <button class="btn-reset categories__btn">
+                  Букеты из Хризантем
+                </button>
+                <button class="btn-reset categories__btn">
+                  Комнатные цветы в горшках
+                </button>
+                <button class="btn-reset categories__btn">
+                  Монобукеты
+                </button>
+                <button class="btn-reset categories__btn">
+                  Сборные букеты
+                </button>
+                <button class="btn-reset categories__btn">
+                  Букеты на праздник
+                </button>
+                <button class="btn-reset categories__btn">
+                  Композиции из цветов
+                </button>
+                <button class="btn-reset categories__btn">
+                  Конверты
+                </button>
+                <button class="btn-reset categories__btn">
+                  Открытки
+                </button>
+                <button class="btn-reset categories__btn">
+                  Подарки
+                </button>
+                <button class="btn-reset categories__btn">
+                  Букеты из сухофруктов
+                </button>
+                <button class="btn-reset categories__btn">
+                  Шары
+                </button>
+                <button class="btn-reset categories__btn">
+                  Популярное
+                </button>
+                <button class="btn-reset categories__btn">
+                  Букеты Роз
+                </button>
+                <button class="btn-reset categories__btn">
+                  Цветы на похороны
+                </button>
+                <button class="btn-reset categories__btn">
+                  Упаковка подарков
+                </button>
+              </div>
+            </div>
+            <aside class="hero-aside">
+              <div class="hero-aside__social">
+                <ul class="list-reset social social" title="Социальные сети">
+                  <li class="social__item"><a href="#" target="_blank" class="social__link social__link--inst" aria-label="Наша страничка в Инстаграм">
+                    <svg class="">
+                      <use xlink:href="img/sprite.svg#inst"></use>
+                    </svg>
+                  </a></li>
+                  <li class="social__item"><a href="#" target="_blank" class="social__link social__link--wa" aria-label="Наша страничка во WathsApp">
+                    <svg class="">
+                      <use xlink:href="img/sprite.svg#whats"></use>
+                    </svg>
+                  </a></li>
+                  <li class="social__item"><a href="#" target="_blank" class="social__link social__link--viber" aria-label="Наша страничка в Viber">
+                    <svg class="">
+                      <use xlink:href="img/sprite.svg#viber"></use>
+                    </svg>
+                  </a></li>
+                </ul>
+              </div>
+              <div class="better-call">
+                <a href="tel:375291136969" class="better-call__tel">+375 (29) 113-69-69</a>
+                <button class="btn-reset better-call__btn">Заказать звонок</button>
+              </div>
+              <div class="bag">
+                <span class="bag__num">5</span>
+                <button class="btn-reset bag__btn">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#bag"></use>
+                  </svg>
+                </button>
+              </div>
+            </aside>
+          </div>
+          <div class="catalog-content">
+            <div class="catalog-content__select">
+
+            </div>
+            <div class="catalog-content__inner">
+              <div class="catalog-content__filter filter-catalog">
+                D
+              </div>
+              <div class="catalog-content__cards catalog-cards">
+                <article class="product">
+
+                  <a href="#" class="product__link-img">
+                    <img src="./img/cataog-img-1.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <span class="product__position-offers product__position-offers--new">new</span>
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="./img/cataog-img-2.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-3.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+                      187.000 ₽
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <span class="product__position-offers product__position-offers--sale">sale</span>
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-4.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-5.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <span class="product__position-offers product__position-offers--new">new</span>
+                    <span class="product__position-offers product__position-offers--sale">sale</span>
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-6.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+                      257.000 ₽
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-7.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+                      257.000 ₽
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-8.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+                      257.000 ₽
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <span class="product__position-offers product__position-offers--sale">sale</span>
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-9.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+                      257.000 ₽
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-10.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+                      257.000 ₽
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <span class="product__position-offers product__position-offers--sale">sale</span>
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-11.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="#" class="product__link-img">
+                    <img src="../img/cataog-img-12.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="#">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">
+                      167.000 ₽
+                    </span>
+                    <span class="product-price__old">
+                      257.000 ₽
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+              </div>
+            </div>
+
+            <a href="#catalog" class="to-top" data-scroll>
+              <svg width="6" height="40" viewBox="0 0 6 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 0L0.113249 5H5.88675L3 0ZM3.5 40L3.5 4.5H2.5L2.5 40H3.5Z" fill="#43FFD2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('parts/footer.html')
+  </div>
+</body>
+</html>

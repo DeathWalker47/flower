@@ -19,7 +19,90 @@
         <div class="container">
           <div class="card-page__top">
             <div class="card-page__images card-images">
-
+              <!-- Большой слайдер -->
+              <div class="card-images__big slider-big swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider-big__image">
+                      <picture>
+                        <source srcset="./img/card-slider-1.webp" type="image/webp">
+                        <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-big__image">
+                      <picture>
+                        <source srcset="./img/card-slider-2.webp" type="image/webp">
+                        <img loading="lazy" src="./img/card-slider-2.jpg." class="image"  alt="букет">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-big__image">
+                      <picture>
+                        <source srcset="./img/card-slider-3.webp" type="image/webp">
+                        <img loading="lazy" src="./img/card-slider-3.jpg." class="image"  alt="букет">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-big__image">
+                      <picture>
+                        <source srcset="./img/card-slider-1.webp" type="image/webp">
+                        <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Маленький слайдер -->
+              <div class="card-images__small slider-small swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider-small__image">
+                        <picture>
+                          <source srcset="./img/card-slider-1.webp" type="image/webp">
+                          <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-small__image">
+                        <picture>
+                          <source srcset="./img/card-slider-2.webp" type="image/webp">
+                          <img loading="lazy" src="./img/card-slider-2.jpg." class="image"  alt="букет">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-small__image">
+                        <picture>
+                          <source srcset="./img/card-slider-3.webp" type="image/webp">
+                          <img loading="lazy" src="./img/card-slider-3.jpg." class="image"  alt="букет">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-small__image">
+                        <picture>
+                          <source srcset="./img/card-slider-1.webp" type="image/webp">
+                          <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                <div class="swiper-button-prev slider-img-left__prev">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2713 12.1045L6.5 8.33316L10.2713 4.56183L10.7427 5.03316L7.44267 8.33316L10.7427 11.6332L10.2713 12.1045Z" />
+                  </svg>
+                </div>
+                <div class="swiper-button-next slider-img-left__next">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2713 12.1045L6.5 8.33316L10.2713 4.56183L10.7427 5.03316L7.44267 8.33316L10.7427 11.6332L10.2713 12.1045Z" />
+                    </svg>
+                </div>
             </div>
             <div class="card-page__content card-content">
               <a href="./index.html" class="link-back card-page__link-back">
@@ -61,9 +144,9 @@
               <div class="card-content__bottom">
                 <button class="btn-reset card-content__btn btn-bag">В корзину</button>
                 <div class="card-content__stepper stepper">
-                  <button class="btn-reset stepper__btn">-</button>
+                  <button class="btn-reset stepper__btn stepper__btn--disable stepper__btn--minus" aria-label="Уменьшить количетсво">-</button>
                   <input type="text" class="stepper__input input-reset" value="1" maxlength="3">
-                  <button class="btn-reset stepper__btn">+</button>
+                  <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="Увеличить количетсво">+</button>
                 </div>
               </div>
             </div>
