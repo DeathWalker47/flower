@@ -6,6 +6,7 @@
   top: 0px;
   padding-top: 20px;
   z-index: 3;
+  transition: background-color .3s ease-in-out;
   &__inner {
     position: relative;
     display: flex;
@@ -24,9 +25,6 @@
   }
 }
 
-.logo {
-
-}
 .nav {
   &__list {
     display: flex;
@@ -114,13 +112,19 @@
 .info-box {
   display: flex;
   flex-direction: column;
+  &__hero {
+
+  }
+  &__second {
+    display: flex;
+    align-items: center;
+  }
   &__item {
     display: flex;
     flex-direction: column;
     &:not(:last-child) {
       margin-bottom: 25px;
     }
-
   }
   &__text {
     margin-bottom: 4px;
@@ -138,12 +142,46 @@
     text-transform: uppercase;
   }
 }
-.header.header-page  {
 
+.header.header-page  {
   position: relative;
 }
+
+.header {
+  .info-box {
+    &__hero {
+      display: block;
+    }
+    &__second {
+      // display: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    }
+  }
+}
+
+.header.header-page {
+  .header__right {
+    position: relative;
+    top: 0;
+  }
+  .info-box {
+    &__hero {
+      display: none;
+    }
+    &__second {
+      // display: flex;
+      opacity: 1;
+      visibility: visible;
+
+    }
+  }
+}
+
 .header-page {
   background-color:#000000;
+  transition: background-color .3s ease-in-out;
   &__info-box {
     top:0;
     position: relative;

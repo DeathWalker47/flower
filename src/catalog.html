@@ -9,7 +9,7 @@
   <title>Каталог</title>
   <script defer src="js/main.js"></script>
 </head>
-<body class="page__body">
+<body class="page__body ">
   <div class="wrapper">
     @include('parts/header.html')
     <main class="main main-catalog" id="catalog">
@@ -117,13 +117,172 @@
               </div>
             </aside>
           </div>
-          <div class="catalog-content">
+          <div class="catalog-content" data-header="header">
             <div class="catalog-content__select">
-
+              <div class="catalog-content__select-left"></div>
+              <div class="catalog-content__select-right btns-select">
+                asfaf
+              </div>
             </div>
             <div class="catalog-content__inner">
               <div class="catalog-content__filter filter-catalog">
-                D
+                <div class=" filter-catalog__item">
+                  <h3 class="filter-catalog__title">
+                    По свету
+                  </h3>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Нежные</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Яркие</span>
+                  </label>
+                </div>
+                <div class=" filter-catalog__item">
+                  <h3 class="filter-catalog__title">
+                    По цвету
+                  </h3>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">белый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">желтый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Зеленый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Красный</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Оранжевый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Розовый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Синий</span>
+                  </label>
+                </div>
+                <div class=" filter-catalog__item">
+                  <h3 class="filter-catalog__title">
+                    по формату
+                  </h3>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">букет</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">В вазе</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">В конверте</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">В корзине</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">В шляпной коробке</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">в ящике</span>
+                  </label>
+                </div>
+
+                <div class="filter-catalog__item filter-catalog__price">
+                  <h3 class="filter-catalog__title">
+                    Стоимость
+                  </h3>
+                  <div class="filter-catalog__slider" id="range-slider"></div>
+                  <div class="filter-catalog__prices">
+                    <span class="filter-catalog__price-text">Цена:</span>
+                    <label class="custom-checkbox__price-label">
+                      <input id="input-0" type="number" min="50" max="10000" placeholder="50" class="input-reset custom-checkbox__price-input">
+                      <span class="filter-catalog__price-text">₽</span>
+                    </label> -
+                    <label class="custom-checkbox__price-label">
+                      <input id="input-1" type="number" min="50" max="10000" placeholder="10000" class="input-reset custom-checkbox__price-input">
+                      <span class="filter-catalog__price-text"> ₽</span>
+                    </label>
+                  </div>
+                </div>
+
+
+                <div class=" filter-catalog__item filter-catalog__flower" >
+                  <h3 class="filter-catalog__title">
+                    по цветку
+                  </h3>
+                  <div class="filter-catalog__box" data-simplebar>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Альстромерия (2)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Антуриум (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Аспарагус (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Астильба (7)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Астранция (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Рооза (2)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Хризантемы (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Одуванчик (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Фикус (7)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Кактус (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Альстромерия (2)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Антуриум (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Аспарагус (1)</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="btn-reset btn-bag">
+                  Сбросить фильтр
+                </button>
               </div>
               <div class="catalog-content__cards catalog-cards">
                 <article class="product">

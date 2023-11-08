@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container">
     <div class="header__inner">
       <a href="./index.html" class="logo">
@@ -6,7 +6,7 @@
       </a>
       <nav class="nav" title="Навигация по сайту">
         <ul class="list-reset nav__list">
-          <li class="nav__item nav__item--dropdown"><a href="#" class="nav__link">
+          <li class="nav__item nav__item--dropdown"><a href="./catalog.html" class="nav__link">
             Каталог
           </a>
           <ul class="dropdown-menu list-reset">
@@ -75,22 +75,37 @@
         </ul>
       </nav>
       <div class="header__right info-box">
-        <div class="header__right-item info-box__item">
-          <a href="mailto:zakaz@loverflower.by" class="header__right-info info-box__text">
-            zakaz@loverflower.by
-          </a>
-          <span>
-            Доставка 24/7 по договоренности с оператором
-          </span>
+        <div class="info-box__hero">
+          <div class="header__right-item info-box__item">
+            <a href="mailto:zakaz@loverflower.by" class="header__right-info info-box__text">
+              zakaz@loverflower.by
+            </a>
+            <span>
+              Доставка 24/7 по договоренности с оператором
+            </span>
+          </div>
+          <div class="header__right-item info-box__item">
+            <address class="header__right-info info-box__text">
+              ул. Тимирязева 67
+            </address>
+            <span>
+              10:00 до 21:00 <br>
+              без выходных
+            </span>
+          </div>
         </div>
-        <div class="header__right-item info-box__item">
-          <address class="header__right-info info-box__text">
-            ул. Тимирязева 67
-          </address>
-          <span>
-            10:00 до 21:00 <br>
-            без выходных
-          </span>
+        <div class="info-box__second">
+          <div class="better-call">
+            <a href="tel:375291136969" class="better-call__tel">+375 (29) 113-69-69</a>
+          </div>
+          <div class="bag">
+            <span class="bag__num">5</span>
+            <button class="btn-reset bag__btn">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#bag"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>

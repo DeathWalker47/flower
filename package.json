@@ -38,6 +38,7 @@
     "gulp-util": "^1.0.0",
     "gulp-webp": "^4.0.1",
     "node-sass": "^7.0.1",
+    "nouislider": "^15.7.1",
     "vinyl-ftp": "^0.6.1",
     "webpack": "^5.72.0",
     "webpack-stream": "^7.0.0"
