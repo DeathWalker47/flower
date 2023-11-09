@@ -31,6 +31,7 @@
     transform: rotate(32.828deg);
     background: var(--purple);
     filter: blur(125px);
+    z-index: -1;
   }
   &__title {
     position: absolute;

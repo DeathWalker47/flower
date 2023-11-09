@@ -97,6 +97,12 @@ if(stepper) {
     }else {
       stepperBtnMinus.classList.remove('stepper__btn--disable')
     }
+
+    if(stepperCount == 999) {
+      stepperBtnPlus.classList.add('stepper__btn--disable')
+    }else {
+      stepperBtnPlus.classList.remove('stepper__btn--disable')
+    }
     stepperInput.value = stepperCount;
   })
 
