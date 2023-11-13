@@ -9,3 +9,4 @@ import './components/stars-reviews.js';
 import './components/to-top.js';
 import './components/range-slider.js';
 import './components/card-bag.js';
+import './components/input-mask.js';

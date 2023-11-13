@@ -1,10 +1,8 @@
-
 const breadcrumbCurrent = document.querySelector('.breadcrumbs-list__link--current')
 
 if(breadcrumbCurrent) {
   breadcrumbCurrent.textContent = document.title
 }
-
 if(document.querySelector('.contact-map__map')) {
   ymaps.ready(init);
   function init(){
@@ -19,7 +17,6 @@ if(document.querySelector('.contact-map__map')) {
             coordinates: [56.14339919772827,47.25118528420461] // координаты точки
         }
       });
-
       // Размещение геообъекта на карте.
       myMap.geoObjects.add(myGeoObject);
   }

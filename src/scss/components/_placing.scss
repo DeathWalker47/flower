@@ -1,0 +1,238 @@
+
+.placing {
+  position: relative;
+  padding: 60px 0 190px;
+  background-image: url('../../img/placing-img-bottom.png');
+  background-position: 50% 136%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    top: -5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  &::before {
+    background-image: url('../../img/placing-img-left.png');
+    left: 0;
+    width: 400px;
+    height: 560px;
+  }
+  &::after {
+    background-image: url('../../img/placing-img-right.png');
+    right: 0;
+    width: 910px;
+    height: 990px;
+  }
+  &__top {
+    position: relative;
+  }
+  &__bottom-text {
+    color:var(--wild);
+    opacity: .7;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    span {
+      padding-left: 95px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form-placing {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  width: 100%;
+  fieldset {
+    margin-bottom: 60px;
+    border:none;
+  }
+  legend {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    @extend %oswald-700;
+    text-transform: uppercase;
+    color:var(--turquoise);
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    @extend %oswald-400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+  }
+  &__input {
+    margin-top: 5px;
+    border: 1px solid #555;
+    padding: 19px 20px;
+    background-color:transparent;
+    color:var(--white);
+    width: 100%;
+    &::placeholder {
+      color: #555;
+    }
+  }
+  &__textarea {
+    resize: none;
+    height: 60px;
+  }
+  &__box {
+    display: flex;
+    gap: 30px;
+  }
+  &__result-price {
+    @extend %oswald-400;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+  }
+  &__promo-title {
+    display: block;
+    margin-bottom: 6px;
+    @extend %oswald-700;
+    color:var(--turquoise);
+  }
+  &__promo-label {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  &__promo-input {
+    height: 100%;
+    width: 160px;
+    margin-top: 0;
+  }
+  &__promo-btn {
+    @extend %oswald-700;
+    color:var(--turquoise);
+    padding: 10px;
+    height: 100%;
+    width: 190px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid var(--turquoise);
+  }
+  &__price {
+
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    @extend %oswald-700;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--turquoise);
+    margin-bottom: 10px;
+    span {
+      margin-left: auto;
+    }
+  }
+  &__sale {
+    display: block;
+    margin-bottom: 10px;
+    @extend %oswald-400;
+    text-transform: uppercase;
+  }
+  &__delivery-price {
+    display: block;
+    margin-bottom: 30px;
+    @extend %oswald-400;
+    text-transform: uppercase;
+  }
+  &__btn {
+    margin-bottom: 10px;
+  }
+  &__info {
+    @extend %corm-300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    a {
+      color: var(--wild);
+      text-decoration: underline;
+      transition: color .3s ease-in-out;
+      &:hover {
+        color:var(--turquoise);
+      }
+    }
+  }
+  &__bottom-text {
+    color:var(--wild);
+    opacity: .7;
+    bottom: 0%;
+    left: 560px;
+    right: auto;
+  }
+  .custom-checkbox {
+    margin-bottom: 20px;
+    &__field {
+
+    }
+    &__content {
+      @extend %oswald-400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.04em;
+      color:#555;
+      &::before {
+        border-radius:100%;
+        border-color: #555;
+        width: 16px;
+        height: 16px;
+      }
+      &::after {
+        border-radius:100%;
+        background-color:var(--white);
+        left: 4px;
+        top: 4px;
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
+  .custom-checkbox__field:checked+.custom-checkbox__content {
+    color:var(--white);
+    &::before {
+      border-color: var(--white);
+    }
+  }
+}
+
+.placing-delivery {
+  &__price-result {
+    display: block;
+    margin-top: 20px;
+    @extend %oswald-700;
+    text-transform: uppercase;
+    color:var(--turquoise);
+  }
+  &__result {
+
+  }
+}

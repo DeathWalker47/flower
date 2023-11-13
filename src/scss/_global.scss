@@ -136,9 +136,11 @@ html {
   background: rgba(0, 0, 0, 0.20);
   backdrop-filter: blur(10px);
   cursor: pointer;
+
   * {
     pointer-events: none;
   }
+
   &__num {
     position: absolute;
     top: 11px;
@@ -148,17 +150,19 @@ html {
     align-items: center;
     min-width: 16px;
     min-height: 16px;
-    border-radius:100%;
+    border-radius: 100%;
     background-color: var(--turquoise);
     color: #142B2B;
     @extend %oswald-400;
     font-size: 12px;
     letter-spacing: 0.48px;
   }
+
   &__btn {
     width: 30px;
     height: 30px;
     color: var(--white);
+
     svg {
       width: 100%;
       height: 100%;
@@ -228,14 +232,17 @@ html {
   line-height: 70px;
   text-transform: capitalize;
   transform: rotate(-30deg);
-  span{
+
+  span {
     display: block;
     margin-bottom: 20px;
+
     &:last-child {
       padding-left: 80px;
     }
   }
 }
+
 // .blure {
 //   filter: blur(7px);
 //   transition: filter .2s linear;

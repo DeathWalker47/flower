@@ -10,6 +10,7 @@
   transform: translateX(100%);
   z-index: 3;
   transition: transform .3s ease-in-out;
+
   &::before {
     position: absolute;
     content: '';
@@ -17,14 +18,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter:blur(10px);
+    backdrop-filter: blur(10px);
     opacity: 0;
     background-color: rgba($color: #000000, $alpha: .2);
     transition: opacity .3s ease-in-out .2s, background-color .3s ease-in-out .2s;
   }
 }
+
 .card-bag-overlay.active {
   transform: translateX(0%);
+
   &::before {
     opacity: 1;
   }
@@ -42,6 +45,7 @@
   // transform: translateX(100%);
   transition: transform .3s ease-in-out;
   z-index: 3;
+
   &--active {
     // transform: translateX(0%);
     transition: transform .3s ease-in-out;
@@ -59,6 +63,7 @@
     filter: blur(110px);
     z-index: -1;
   }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -66,9 +71,10 @@
     padding-bottom: 15px;
     border-bottom: 1px solid #555555;
   }
+
   &__title {
     @extend %oswald-700;
-    color:var(--turquoise);
+    color: var(--turquoise);
     font-size: 30px;
     line-height: 44px;
     letter-spacing: 0.04em;
@@ -87,14 +93,17 @@
     height: 80px;
     margin-right: 20px;
   }
+
   &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   &__info {
     width: 100%;
   }
+
   &__info-top {
     display: flex;
     justify-content: space-between;
@@ -106,28 +115,34 @@
     text-transform: uppercase;
 
   }
+
   &__info-title {
     @extend %oswald-400;
-    color:var(--white);
+    color: var(--white);
   }
+
   &__info-price {
     @extend %oswald-700;
     font-size: 18px;
     letter-spacing: 0.04em;
-    color:var(--turquoise);
+    color: var(--turquoise);
   }
+
   &__info-botton {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
+
   &__stepper {
     width: 100px;
     height: 30px;
+
     input {
       font-size: 12px;
     }
   }
+
   &__btn-delete {
     @extend %oswald-400;
     line-height: 15px;
@@ -135,11 +150,11 @@
     letter-spacing: 0.04em;
     text-decoration: underline;
     text-transform: uppercase;
-    color:var(--white);
+    color: var(--white);
     transition: color .3s ease-in-out;
 
     &:hover {
-      color:var(--turquoise);
+      color: var(--turquoise);
     }
   }
 }

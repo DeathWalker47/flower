@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Оформление заказа</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    @include('parts/header-page.html')
+    @include('parts/breadcrumbs.html')
+    <main class="main ">
+      <section class="placing">
+        <div class="container">
+          <div class="placing__top">
+            <h2 class="placing__title section-title">
+              Оформление
+              <span>
+                заказа
+              </span>
+            </h2>
+            <span class="bottom-text placing__bottom-text"><span>lover</span><span>flower</span></span>
+          </div>
+        <div class="placing__content">
+          <form  class="form-placing">
+            <fieldset>
+              <legend>
+                Контактные данные
+              </legend>
+              <label class="form-placing__label">
+                Ваше имя*
+                <input type="text" required class="form-placing__input input-reset" placeholder="Введине ваше имя">
+              </label>
+              <label class="form-placing__label">
+                Ваш телефон*
+                <input type="tel" required class="form-placing__input input-reset" placeholder="+7 (977) 777-77-77">
+              </label>
+              <label class="form-placing__label">
+                Ваш e-mail*
+                <input type="email" required class="form-placing__input input-reset" placeholder="Введите вашу почту">
+              </label>
+              <label class="form-placing__label">
+                Телефон получателя (необязательно)
+                <input type="tel" class="form-placing__input input-reset" placeholder="+7 (977) 777-77-77">
+              </label>
+              <label class="form-placing__label">
+                Имя получателя (необязательно)
+                <input type="text" class="form-placing__input input-reset" placeholder="Введите имя получателя">
+              </label>
+              <label class="form-placing__label">
+                Комментарий к заказу
+                <textarea class="form-placing__input form-placing__textarea input-reset" placeholder="Примечания к вашеу заказу,  особые пожелания отделу доставки"></textarea>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Доставка
+              </legend>
+              <label class="custom-checkbox">
+                <input type="radio" name="delivery" value="Самовывоз" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">Самовывоз</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="radio" name="delivery" value="Доставка курьером" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">Доставка курьером</span>
+              </label>
+              <label  class="form-placing__label">
+                Город*
+                <input type="text" class="form-placing__input input-reset" placeholder="Укажите свой город">
+              </label>
+              <label  class="form-placing__label">
+                Улица*
+                <input type="text" class="form-placing__input input-reset" placeholder="Введите улицу">
+              </label>
+              <div class="form-placing__box">
+                <label  class="form-placing__label">
+                  Корп/стр
+                  <input type="number" class="form-placing__input input-reset" placeholder="Корп/стр">
+                </label>
+                <label  class="form-placing__label">
+                  Дом
+                  <input type="number" class="form-placing__input input-reset" placeholder="Дом">
+                </label>
+                <label  class="form-placing__label">
+                  Кв/офис
+                  <input type="number" class="form-placing__input input-reset" placeholder="Кв/офис">
+                </label>
+              </div>
+              <span class="form-placing__result-price">Стоимость доставки 0 ₽</span>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Оплата
+              </legend>
+              <label class="custom-checkbox">
+                <input type="radio" name="pay" value="Банковская карта" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">Банковская карта</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="radio" name="pay" value="Наличными" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">Наличными</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="radio" name="pay" value="Apple pay" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">Apple pay</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="radio" name="pay" value="Google pay" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">Google pay</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="radio" name="pay" value="Криптовалюта" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">Криптовалюта</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="radio" name="pay" value="расчетного счета" class="custom-checkbox__field">
+                <span class="custom-checkbox__content">С расчетного счета</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="form-placing__promo">
+              <span class="form-placing__promo-title">
+                Промокод
+              </span>
+              <label class="form-placing__promo-label">
+                <input type="text" class="form-placing__input input-reset form-placing__promo-input" placeholder="Промокод">
+                <button class="btn-reset form-placing__promo-btn">Применить</button>
+              </label>
+            </fieldset>
+
+            <div class="form-placing__price">
+              <h3 class="form-placing__title">
+                Общая сумма заказа
+                <span>334.00 ₽</span>
+              </h3>
+              <span class="form-placing__sale">
+                Скидка = 0 ₽
+              </span>
+              <span class="form-placing__delivery-price">
+                Доставка = 0 ₽
+              </span>
+            </div>
+            <button class="form-placing__btn btn-reset btn-link" type="submit">к оплате</button>
+           <span class="form-placing__info">
+            Нажимая  на кнопку «К Оплате», я даю свое согласие на обработку персональных данных, в соответствии с <a href="form-placing__conf">Политикой конфиденциальности</a>, а так же ознакомлен с условиями оплаты и доставки
+           </span>
+           <span class="bottom-text form-placing__bottom-text">payment</span>
+          </form>
+          <div class="placing-delivery">
+            <ul class="card-list list-reset">
+              <li class="card-list__item">
+                <article class="bag-card">
+                  <div class="bag-card__img">
+                    <img src="../img/card-slider-1.jpg" alt="Букет" class="bag-card__image">
+                  </div>
+                  <div class="bag-card__info">
+                    <div class="bag-card__info-top">
+                      <h3 class="bag-card__info-title">
+                        рубиновые искры
+                      </h3>
+                      <span class="bag-card__info-price">
+                        167.00 ₽
+                      </span>
+                    </div>
+                    <div class="bag-card__info-botton">
+                      <div class="bag-card__stepper stepper">
+                        <button class="btn-reset stepper__btn stepper__btn--disable stepper__btn--minus" aria-label="Уменьшить количетсво">-</button>
+                        <input type="text" class="stepper__input input-reset" value="1" maxlength="3">
+                        <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="Увеличить количетсво">+</button>
+                      </div>
+                      <button class="btn-reset bag-card__btn-delete">
+                        Удалить
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="card-list__item">
+                <article class="bag-card">
+                  <div class="bag-card__img">
+                    <img src="../img/card-slider-1.jpg" alt="Букет" class="bag-card__image">
+                  </div>
+                  <div class="bag-card__info">
+                    <div class="bag-card__info-top">
+                      <h3 class="bag-card__info-title">
+                        рубиновые искры
+                      </h3>
+                      <span class="bag-card__info-price">
+                        167.00 ₽
+                      </span>
+                    </div>
+                    <div class="bag-card__info-botton">
+                      <div class="bag-card__stepper stepper">
+                        <button class="btn-reset stepper__btn stepper__btn--disable stepper__btn--minus" aria-label="Уменьшить количетсво">-</button>
+                        <input type="text" class="stepper__input input-reset" value="1" maxlength="3">
+                        <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="Увеличить количетсво">+</button>
+                      </div>
+                      <button class="btn-reset bag-card__btn-delete">
+                        Удалить
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <span class="placing-delivery__price-result">
+              Предварительный итог: <span class="placing-delivery__result">334.00 руб.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
+    @include('parts/footer.html')
+
+  </div>
+  @include('parts/card-bag.html')
+</body>
+</html>
