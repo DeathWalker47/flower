@@ -21,7 +21,6 @@ const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
 const gutil = require("gulp-util");
 const ftp = require("vinyl-ftp");
-const typograf = require("gulp-typograf");
 
 const fonts = () => {
   return src("./src/fonts/ttf/*.ttf")
@@ -84,11 +83,7 @@ const htmlInclude = () => {
         basepath: "@file",
       })
     )
-    .pipe(
-      typograf({
-        locale: ["ru", "en-US"],
-      })
-    )
+
     .pipe(dest("./app"))
     .pipe(browserSync.stream());
 };

@@ -5,8 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
   <link rel="stylesheet" href="css/main.min.css">
   <title>Каталог</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 <body class="page__body ">
@@ -30,55 +35,55 @@
                 </h1>
               </div>
               <div class="catalog-page__categories categories">
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Букеты из гипсофил">
                   Букеты из гипсофил
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Букеты Из Ромашек">
                   Букеты Из Ромашек
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Букеты из Хризантем">
                   Букеты из Хризантем
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Комнатные цветы в горшках">
                   Комнатные цветы в горшках
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Монобукеты">
                   Монобукеты
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Сборные букеты">
                   Сборные букеты
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Букеты на праздник">
                   Букеты на праздник
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Композиции из цветов">
                   Композиции из цветов
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Конверты">
                   Конверты
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Открытки">
                   Открытки
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Подарки">
                   Подарки
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Букеты из сухофруктов">
                   Букеты из сухофруктов
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Шары">
                   Шары
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Популярное">
                   Популярное
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Букеты Роз">
                   Букеты Роз
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Цветы на похороны">
                   Цветы на похороны
                 </button>
-                <button class="btn-reset categories__btn">
+                <button class="btn-reset categories__btn" data-text="Упаковка подарков">
                   Упаковка подарков
                 </button>
               </div>
@@ -119,9 +124,18 @@
           </div>
           <div class="catalog-content" data-header="header">
             <div class="catalog-content__select">
-              <div class="catalog-content__select-left"></div>
-              <div class="catalog-content__select-right btns-select">
-                asfaf
+              <div class="catalog-content__select-left">
+              </div>
+              <div class="catalog-content__select-right ">
+                <div class="btns-select catalog-content__btns-select">
+
+                </div>
+                <select select-multiple name="aafa" class="catalog-content__select js-choice default">
+                  <option value="По полулярноть">По полулярноть</option>
+                  <option value="По цвету">По цвету</option>
+                  <option value="По стоимости">По стоимости</option>
+                  <option value="По цветку">По цветку</option>
+                </select>
               </div>
             </div>
             <div class="catalog-content__inner">
@@ -280,18 +294,18 @@
                     </label>
                   </div>
                 </div>
-                <button class="btn-reset btn-bag">
+                <button class="btn-reset btn-bag reset-filtr">
                   Сбросить фильтр
                 </button>
               </div>
               <div class="catalog-content__cards catalog-cards">
                 <article class="product">
 
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="./img/cataog-img-1.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -313,11 +327,11 @@
                     <span class="product__position-offers product__position-offers--new">new</span>
                     <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="./img/cataog-img-2.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -337,11 +351,11 @@
                 <article class="product">
                   <div class="product__position">
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-3.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -362,11 +376,11 @@
                     <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
                     <span class="product__position-offers product__position-offers--sale">sale</span>
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-4.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -386,11 +400,11 @@
                 <article class="product">
                   <div class="product__position">
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-5.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -412,11 +426,11 @@
                     <span class="product__position-offers product__position-offers--new">new</span>
                     <span class="product__position-offers product__position-offers--sale">sale</span>
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-6.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -438,11 +452,11 @@
                     <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
                     <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-7.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -463,11 +477,11 @@
                     <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
                     <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-8.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -489,11 +503,11 @@
                     <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
                     <span class="product__position-offers product__position-offers--sale">sale</span>
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-9.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -515,11 +529,11 @@
                     <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
                     <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-10.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -541,11 +555,11 @@
                     <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
                     <span class="product__position-offers product__position-offers--sale">sale</span>
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-11.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
@@ -566,11 +580,11 @@
                     <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
                     <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
                   </div>
-                  <a href="#" class="product__link-img">
+                  <a href="./card.html" class="product__link-img">
                     <img src="../img/cataog-img-12.jpg" alt="Картинка букета" class="product__img">
                   </a>
                   <h3 class="product__title">
-                    <a href="#">
+                    <a href="./card.html">
                       лучший день
                     </a>
                   </h3>
