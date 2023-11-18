@@ -1,23 +1,20 @@
 import SmoothScroll from "smooth-scroll";
 import 'simplebar';
-const scroll = new SmoothScroll(linkToTop);
-
-// const scroll = new SmoothScroll(linkToTop);
 const linkToTop = document.querySelector(".to-top");
+const scroll = new SmoothScroll('.to-top');
+
 const catalogContent = document.querySelector('.catalog-content')
 const headerBlock = document.querySelector('.header')
 
-if(linkToTop) {
-  window.addEventListener('scroll', function() {
 
-    let scrollDistance = this.window.scrollY;
+window.addEventListener('scroll', function() {
 
-    if(scrollDistance >= catalogContent.offsetTop) {
-      headerBlock.classList.add('header-page')
-    } else {
-      headerBlock.classList.remove('header-page')
-    }
-  });
-}
-
+  let scrollDistance = this.window.scrollY;
+  console.log(scrollDistance);
+  if(scrollDistance >= catalogContent.offsetTop) {
+    headerBlock.classList.add('header-page')
+  } else {
+    headerBlock.classList.remove('header-page')
+  }
+});
 

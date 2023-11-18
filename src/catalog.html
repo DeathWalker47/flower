@@ -14,7 +14,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
-<body class="page__body ">
+<body class="page__body catalog-box">
   <div class="wrapper">
     @include('parts/header.html')
     <main class="main main-catalog" id="catalog">
@@ -110,8 +110,9 @@
               </div>
               <div class="better-call">
                 <a href="tel:375291136969" class="better-call__tel">+375 (29) 113-69-69</a>
-                <button class="btn-reset better-call__btn">Заказать звонок</button>
+                <button class="btn-reset better-call__btn" data-graph-path="modal-tell">Заказать звонок</button>
               </div>
+
               <div class="bag">
                 <span class="bag__num">5</span>
                 <button class="btn-reset bag__btn">
@@ -132,9 +133,8 @@
                 </div>
                 <select select-multiple name="aafa" class="catalog-content__select js-choice default">
                   <option value="По полулярноть">По полулярноть</option>
-                  <option value="По цвету">По цвету</option>
-                  <option value="По стоимости">По стоимости</option>
-                  <option value="По цветку">По цветку</option>
+                  <option value="По цвету">сначала дорогие</option>
+                  <option value="По стоимости">сначала дешевые</option>
                 </select>
               </div>
             </div>
@@ -616,5 +616,6 @@
 
   </div>
   @include('parts/card-bag.html')
+  @include('parts/modal.html')
 </body>
 </html>

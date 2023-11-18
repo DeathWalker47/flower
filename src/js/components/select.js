@@ -1,12 +1,16 @@
+const catalogPage = document.querySelector('.catalog-page');
 
-const defaultSelect = () => {
-  const element = document.querySelector('.default');
-  const choices = new Choices(element, {
-    searchEnabled:false,
-
-  });
+if(catalogPage) {
+  const defaultSelect = () => {
+    const element = document.querySelector('.default');
+    const choices = new Choices(element, {
+      searchEnabled:false,
+    });
+  }
+    defaultSelect();
 }
-  defaultSelect();
+
+
 
 const btnResetInput = document.querySelector('.reset-filtr')
 const btnCategoines = document.querySelectorAll('.categories__btn');

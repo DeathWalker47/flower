@@ -1,0 +1,99 @@
+
+.graph-modal.is-open {
+  background: rgba(0,0,0,.2);
+  backdrop-filter: blur(10px);
+}
+
+.better-tell {
+  width: 540px;
+  padding: 30px;
+  background-color: #0F2222;
+  border-radius: 0;
+  z-index: 1;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content:'';
+    filter: blur(80px);
+    z-index: -1;
+  }
+  &::before {
+    width: 250px;
+    height: 255px;
+    top: -70px;
+    left: -40px;
+    background-color: var(--purple);
+  }
+  &::after {
+    top: 100px;
+    left: 90px;
+    width: 180px;
+    height: 154px;
+    z-index: -2;
+    background: var(--turquoise);
+  }
+  &__close {
+    width: 30px;
+    height: 30px;
+  }
+  &__content {
+
+  }
+  &__title {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    @extend %corm-300 ;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+  &__text {
+    margin-bottom: 20px;
+    @extend %oswald-300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    width: 310px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    display: inline-block;
+    max-width: 480px;
+    width: 100%;
+    border: 1px solid var(--turquoise);
+    background-color: transparent;
+    padding: 20px;
+    text-transform: uppercase;
+    color: var(--turquoise);
+    &::placeholder {
+      color: var(--turquoise);
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__form-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 255px;
+  }
+  &__info {
+    @extend %corm-300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .02em;
+    a {
+      color: var(--wild);
+      text-decoration: underline;
+      transition: color .3s ease-in-out;
+    }
+  }
+}
