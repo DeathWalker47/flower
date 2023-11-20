@@ -11,6 +11,7 @@ import './components/range-slider.js';
 import './components/card-bag.js';
 import './components/input-mask.js';
 import './components/modal.js';
+import './components/cart.js';
 
 
 

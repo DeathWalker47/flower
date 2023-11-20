@@ -10,7 +10,6 @@ const headerBlock = document.querySelector('.header')
 window.addEventListener('scroll', function() {
 
   let scrollDistance = this.window.scrollY;
-  console.log(scrollDistance);
   if(scrollDistance >= catalogContent.offsetTop) {
     headerBlock.classList.add('header-page')
   } else {

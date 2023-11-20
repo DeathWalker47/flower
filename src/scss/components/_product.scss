@@ -60,17 +60,26 @@
     margin-bottom: 20px;
   }
   &__btn {
-
+    &:disabled {
+      pointer-events: none;
+      background-color: rgba($color: #fff, $alpha: .1);
+    }
   }
 }
 .product-price {
   color: var(--white);
   &__current {
+    position: relative;
     margin-right: 10px;
     @extend %oswald-700;
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.04em;
+
+    &::after {
+      // position: absolute;
+      content: '.000 ₽'
+    }
   }
   &__old {
     @extend %oswald-400;
