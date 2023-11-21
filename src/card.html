@@ -17,14 +17,17 @@
       <section class="card-page">
         <h2 class="visually-hidden">Рубиновые Искры</h2>
         <div class="container">
-          <div class="card-page__top">
+          <div class="card-page__top product">
+            <div class="product__link-img visually-hidden">
+              <img src="./img/card-slider-1.jpg" alt="Букет">
+            </div>
             <div class="card-page__images card-images">
               <!-- Большой слайдер -->
-              <div class="card-images__big slider-big swiper">
+              <div class="card-images__big slider-big swiper ">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="slider-big__image">
-                      <picture>
+                      <picture >
                         <source srcset="./img/card-slider-1.webp" type="image/webp">
                         <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
                       </picture>
@@ -60,8 +63,8 @@
               <div class="card-images__small slider-small swiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <div class="slider-small__image">
-                        <picture>
+                      <div class="slider-small__image ">
+                        <picture >
                           <source srcset="./img/card-slider-1.webp" type="image/webp">
                           <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
                         </picture>
@@ -104,19 +107,19 @@
                     </svg>
                 </div>
             </div>
-            <div class="card-page__content card-content">
+            <div class="card-page__content card-content ">
               <a href="./index.html" class="link-back card-page__link-back">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.2713 12.1045L6.5 8.33316L10.2713 4.56183L10.7427 5.03316L7.44267 8.33316L10.7427 11.6332L10.2713 12.1045Z" />
                   </svg>
                 Назад
               </a>
-              <h3 class="card-content__title">
-                рубиновые искры
+              <h3 class="card-content__title product__title">
+                <a >рубиновые искры</a>
               </h3>
               <div class="card-content__price">
-                <span class="card-content__price-current">167.00 ₽</span>
-                <span class="card-content__price-old">187.00 ₽</span>
+                <span class="card-content__price-current price-current product-price__current">1 670</span>
+                <span class="card-content__price-old price-old product-price__old">1 870</span>
               </div>
               <div class="card-content__info">
                 <span>Состав:</span> Гвоздика (Диантус), Леукодендрон, Леукоспермум (Нутан), Лотос, Роза
@@ -142,7 +145,7 @@
                 </p>
               </div>
               <div class="card-content__bottom">
-                <button class="btn-reset card-content__btn btn-bag">В корзину</button>
+                <button class="btn-reset card-content__btn btn-bag product__btn">В корзину</button>
                 <div class="card-content__stepper stepper">
                   <button class="btn-reset stepper__btn stepper__btn--disable stepper__btn--minus" aria-label="Уменьшить количетсво">-</button>
                   <input type="text" class="stepper__input input-reset" value="1" maxlength="3">

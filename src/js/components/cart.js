@@ -85,7 +85,6 @@ productBtn.forEach(el => {
     let title = parent.querySelector('.product__title a').textContent;
     // let priceString = parent.querySelector('.product-price__current').textContent
     let priceNumber = parseInt(priceWithoutSpaces(parent.querySelector('.product-price__current').textContent))
-    console.log(priceNumber);
 
     plusFullPrice(priceNumber);
     printFullPrice();

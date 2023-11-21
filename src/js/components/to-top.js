@@ -6,14 +6,14 @@ const scroll = new SmoothScroll('.to-top');
 const catalogContent = document.querySelector('.catalog-content')
 const headerBlock = document.querySelector('.header')
 
+if(catalogContent) {
+  window.addEventListener('scroll', function() {
 
-window.addEventListener('scroll', function() {
-
-  let scrollDistance = this.window.scrollY;
-  if(scrollDistance >= catalogContent.offsetTop) {
-    headerBlock.classList.add('header-page')
-  } else {
-    headerBlock.classList.remove('header-page')
-  }
-});
-
+    let scrollDistance = this.window.scrollY;
+    if(scrollDistance >= catalogContent.offsetTop) {
+      headerBlock.classList.add('header-page')
+    } else {
+      headerBlock.classList.remove('header-page')
+    }
+  });
+}

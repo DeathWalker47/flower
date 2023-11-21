@@ -76,17 +76,36 @@
     line-height: 21px;
     letter-spacing: 0.04em;
 
-    &::after {
-      // position: absolute;
-      content: '.000 ₽'
-    }
+
   }
   &__old {
+    position: relative;
     @extend %oswald-400;
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.04em;
     color: #939393;
     text-decoration: line-through;
+    &::after {
+      // position: absolute;
+      content: '.00 ₽'
+    }
+  }
+}
+
+
+.price-current {
+  position: relative;
+  &::after {
+    // position: absolute;
+    content: '.00 ₽'
+  }
+}
+
+.price-old {
+  position: relative;
+  &::after {
+    // position: absolute;
+    content: '.00 ₽'
   }
 }

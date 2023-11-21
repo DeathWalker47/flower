@@ -15,16 +15,18 @@ if(catalogPage) {
 const btnResetInput = document.querySelector('.reset-filtr')
 const btnCategoines = document.querySelectorAll('.categories__btn');
 const btnsSelect = document.querySelector('.btns-select');
+if(btnResetInput) {
 
-btnResetInput.addEventListener('click', (e)=> {
-  e.preventDefault();
-  let chekedInput = document.querySelectorAll('.custom-checkbox__field')
-  chekedInput.forEach(el => {
-    if(el.checked) {
-      el.checked = false
-    }
+  btnResetInput.addEventListener('click', (e)=> {
+    e.preventDefault();
+    let chekedInput = document.querySelectorAll('.custom-checkbox__field')
+    chekedInput.forEach(el => {
+      if(el.checked) {
+        el.checked = false
+      }
+    })
   })
-})
+}
 
 const createItem = (text) => {
   return (
@@ -40,27 +42,30 @@ const createItem = (text) => {
   )
 }
 
+if(btnCategoines) {
 
-btnCategoines.forEach(elem => {
-  elem.addEventListener('click', (btn)=> {
-    let current = btn.currentTarget;
-    current.classList.toggle('active');
-    if(current.classList.contains('active')) {
-      let text = current.textContent.trimLeft().trimRight();
-      btnsSelect.insertAdjacentHTML('afterBegin', createItem(text));
-    } else {
-      let text = current.textContent.trimLeft().trimRight();
-      document.querySelector(`[data-chois="${text}"]`).remove();
+  btnCategoines.forEach(elem => {
+    elem.addEventListener('click', (btn)=> {
+      let current = btn.currentTarget;
+      current.classList.toggle('active');
+      if(current.classList.contains('active')) {
+        let text = current.textContent.trimLeft().trimRight();
+        btnsSelect.insertAdjacentHTML('afterBegin', createItem(text));
+      } else {
+        let text = current.textContent.trimLeft().trimRight();
+        document.querySelector(`[data-chois="${text}"]`).remove();
+      }
+    })
+  })
+}
+
+if(btnsSelect) {
+  btnsSelect.addEventListener('click', (e)=> {
+    if(e.target.classList.contains('btns-select__delete')) {
+      e.preventDefault();
+      e.target.remove();
+      let btnText = e.target.textContent.trimLeft().trimRight()
+      document.querySelector(`[data-text="${btnText}"]`).classList.remove('active')
     }
   })
-})
-
-
-btnsSelect.addEventListener('click', (e)=> {
-  if(e.target.classList.contains('btns-select__delete')) {
-    e.preventDefault();
-    e.target.remove();
-    let btnText = e.target.textContent.trimLeft().trimRight()
-    document.querySelector(`[data-text="${btnText}"]`).classList.remove('active')
-  }
-})
+}

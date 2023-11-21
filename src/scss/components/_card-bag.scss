@@ -98,7 +98,7 @@
   &__fullprice {
     position: relative;
     &::after {
-      content: '.000 ₽'
+      content: '.00 ₽'
     }
   }
   &__text {
@@ -163,7 +163,7 @@
     color: var(--turquoise);
 
     &::after {
-      content: '.000 ₽'
+      content: '.00 ₽'
     }
   }
 
