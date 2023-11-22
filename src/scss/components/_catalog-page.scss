@@ -114,6 +114,29 @@
 .catalog-content {
   position: relative;
 
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: -130px;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  &::before {
+    width: 880px;
+    height: 210px;
+    background: var(--turquoise);
+    filter: blur(100px);
+    left: 16%;
+  }
+  &::after {
+    width: 350px;
+    height: 360px;
+    background: var(--purple);
+    filter: blur(100px);
+    right: -40%;
+  }
+
   &__select-left {
     grid-column: 1 span;
   }

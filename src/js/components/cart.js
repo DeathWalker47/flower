@@ -5,11 +5,12 @@ const cart = document.querySelector('.bag');
 const cartQuantity = document.querySelector('.bag__num');
 const fullPrice = document.querySelector('.card-bag__fullprice');
 let price = 0;
+let randomId = 0
 
 
-const randomId = () => {
-	return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-};
+// const randomId = () => {
+// 	return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+// };
 
 const priceWithoutSpaces = (str) => {
 	return str.replace(/\s/g, '');
@@ -74,9 +75,11 @@ const deleteProducts = (productParent) => {
   productParent.remove();
   printQuantity();
 
+  updateStorage();
+
 }
 productBtn.forEach(el => {
-  el.closest('.product').setAttribute('data-id', randomId());
+  el.closest('.product').setAttribute('data-id', ++randomId);
   el.addEventListener('click', (e) => {
     let self = e.currentTarget;
     let parent = self.closest('.product');
@@ -90,6 +93,10 @@ productBtn.forEach(el => {
     printFullPrice();
     cartProductList.insertAdjacentHTML('afterbegin', generateCartProudct(img,title,priceNumber,id))
     printQuantity();
+
+    updateStorage()
+
+
     self.disabled = true;
   })
 });
@@ -99,3 +106,36 @@ cartProductList.addEventListener('click', (e)=> {
     deleteProducts(e.target.closest('.card-list__item'))
   }
 })
+
+const countSum = () => {
+  document.querySelectorAll('.card-list__item').forEach( el => {
+    price +=  parseInt(priceWithoutSpaces(el.querySelector('.bag-card__info-price').textContent))
+
+  });
+};
+
+const initialState = () => {
+  if(localStorage.getItem('products')!== null) {
+    cartProductList.innerHTML = localStorage.getItem('products');
+    printQuantity();
+    countSum();
+    printFullPrice();
+
+    document.querySelectorAll('.bag-card').forEach(el => {
+      let id = el.dataset.id;
+      console.log(id);
+      document.querySelector(`.product[data-id='${id}']`).querySelector('.product__btn').disabled = true;
+    })
+  }
+};
+initialState()
+
+const updateStorage = () => {
+  let html = cartProductList.innerHTML;
+  html = html.trim();
+  if(html.length) {
+    localStorage.setItem('products', html);
+  } else {
+    localStorage.removeItem('products');
+  }
+};
