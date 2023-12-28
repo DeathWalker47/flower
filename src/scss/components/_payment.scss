@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 250px;
 
-  background-image: url('../../img/payment-img-center.png');
+  background-image: url('.././img/payment-img-center.png');
   background-repeat: no-repeat;
   background-position: -70% 60%;
   background-size: auto;
@@ -21,14 +21,14 @@
     right: -18%;
     width: 930px;
     height: 1037px;
-    background-image: url('../img/payment-img-top.png');
+    background-image: url('./img/payment-img-top.png');
   }
   &::after {
     bottom: -27%;
     right: -23%;
     width: 1430px;
     height: 1200px;
-    background-image: url('../img/payment-img-bottom.png');
+    background-image: url('./img/payment-img-bottom.png');
   }
   .bottom-text {
     bottom: 0;

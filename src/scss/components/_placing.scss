@@ -2,7 +2,7 @@
 .placing {
   position: relative;
   padding: 60px 0 190px;
-  background-image: url('../../img/placing-img-bottom.png');
+  background-image: url('.././img/placing-img-bottom.png');
   background-position: 50% 136%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -16,13 +16,13 @@
     z-index: -1;
   }
   &::before {
-    background-image: url('../../img/placing-img-left.png');
+    background-image: url('.././img/placing-img-left.png');
     left: 0;
     width: 400px;
     height: 560px;
   }
   &::after {
-    background-image: url('../../img/placing-img-right.png');
+    background-image: url('.././img/placing-img-right.png');
     right: 0;
     width: 910px;
     height: 990px;

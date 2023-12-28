@@ -20,13 +20,13 @@
     z-index: -1;
   }
   &::before {
-    background-image: url('../../img/catalog-img-left.png');
+    background-image: url('.././img/catalog-img-left.png');
     width: 620px;
     height: 1250px;
     left: 0;
   }
   &::after {
-    background-image: url('../../img/catalog-img-right.png');
+    background-image: url('.././img/catalog-img-right.png');
     width: 730px;
     height: 1100px;
     right: 0;

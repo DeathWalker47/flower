@@ -16,14 +16,14 @@
     left: -310px;
     width: 716px;
     height: 920px;
-    background-image: url('../img/faq-img-top-left.png');
+    background-image: url('./img/faq-img-top-left.png');
   }
   &::after {
     top: -85px;
     right: 0;
     width: 620px;
     height: 660px;
-    background-image: url('../img/faq-img-top-right.png');
+    background-image: url('./img/faq-img-top-right.png');
     transform: rotate(-90deg);
   }
   &__title {

@@ -11,7 +11,7 @@
     background-size: cover;
   }
   &::before {
-    background-image: url('../img/about-top-1.png');
+    background-image: url('./img/about-top-1.png');
     width: 831px;
     height: 736px;
     left: -8%;
@@ -19,7 +19,7 @@
     transform: rotate(73deg);
   }
   &::after {
-    background-image: url('../img/about-top-2.png');
+    background-image: url('./img/about-top-2.png');
     width: 930px;
     height: 690px;
     top: 0;
@@ -134,7 +134,7 @@
     bottom: -24%;
     transform: rotate(-57deg);
     right: -13%;
-    background-image: url('../img/about-bottom-img.png');
+    background-image: url('./img/about-bottom-img.png');
     width: 1280px;
     height: 1078px;
     background-repeat: no-repeat;
